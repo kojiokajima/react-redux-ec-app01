@@ -1,8 +1,10 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getUserId,  getUsername } from "../reducks/users/selectors";
+import {signOut} from '../reducks/users/operations'
 
 const Home = () => {
+    const dispatch = useDispatch()
     const selector = useSelector(state => state)
     const uid = getUserId(selector)
     const username = getUsername(selector)
@@ -12,6 +14,7 @@ const Home = () => {
             <h2>Home</h2>
             <p>User ID: {uid}</p>
             <p>Username: {username}</p>
+            <button onClick={() => dispatch(signOut())}>Sign Out</button>
         </div>
     )
 }
