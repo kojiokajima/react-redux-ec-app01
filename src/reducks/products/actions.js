@@ -1,3 +1,11 @@
+export const DELETE_PRODUCTS = "DELEte_PRODUCTS"
+export const deleteProductAction = (products) => {
+    return {
+        type: "DELETE_PRODUCTS",
+        payload: products
+    }
+}
+
 export const FETCH_PRODUCTS = "FETCH_PRODUCTS"
 export const fetchProductsAction = (products) => {
     return {
