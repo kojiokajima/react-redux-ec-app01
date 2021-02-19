@@ -23,4 +23,4 @@ const HeaderMenus = () => {
     )
 }
 
-export default HeaderMenus
+export default HeaderMenus;
