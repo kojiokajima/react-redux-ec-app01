@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 // import ImageArea from '../components/Products/ImageArea';
 import {ImageArea, SetSizeArea} from '../components/Products/index'
 import { PrimaryButton, SelectBox, TextInput } from '../components/UIkit';
-import {saveProduct} from '../reducks/products/operators'
+import {saveProduct} from '../reducks/products/operations'
 import {db} from '../firebase/index';
 
 const ProductEdit = () => {
