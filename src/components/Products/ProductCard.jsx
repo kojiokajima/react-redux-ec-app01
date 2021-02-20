@@ -59,7 +59,7 @@ const ProductCard = (props) => {
     }
 
     const images = (props.images.length > 0) ? props.images : [{path: NoImage}]
-    const price = props.price.toLocaleString();
+    const price = props.price.toFixed(2).toLocaleString();
 
     return (
         <Card className={classes.root}>
@@ -75,7 +75,7 @@ const ProductCard = (props) => {
                         {props.name} 
                     </Typography>
                     <Typography className={classes.price} component="p">
-                        ¥{price}
+                        ${price}
                     </Typography>
                 </div>
                 <IconButton onClick={handleClick}>
