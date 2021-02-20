@@ -90,7 +90,7 @@ const ProductDetail = () => {
                     </div>
                     <div className={classes.detail}>
                         <h2 className="u-text__headline">{product.name}</h2>
-                        <p className={classes.price}>{product.price.toLocaleString()}</p>
+                        <p className={classes.price}>${product.price.toFixed(2).toLocaleString()}</p>
                         <div className="modul-space--small" />
                         <SizeTable addProduct={addProduct} sizes={product.sizes} />
                         <div className="modul-space--small" />

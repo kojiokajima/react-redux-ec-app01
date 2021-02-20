@@ -32,7 +32,7 @@ const CartListItem = (props) => {
 
     const image = props.product.images[0].path
     const name = props.product.name
-    const price = props.product.price.toLocaleString()
+    const price = props.product.price.toFixed(2).toLocaleString()
     const size = props.product.size
 
     const removeProductFromCart = (id) => {
